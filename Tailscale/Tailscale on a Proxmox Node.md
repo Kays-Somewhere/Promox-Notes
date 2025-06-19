@@ -58,6 +58,11 @@ Tailscale on a Proxmox host: https://tailscale.com/kb/1133/proxmox?q=proxmox
 Install Tailscale on Linux: https://tailscale.com/kb/1031/install-linux
 
 # Troubleshooting 
-E: Failed to fetch https://enterprise.proxmox.com/xxx/xxx ...
+#### In the Shell- "E: Failed to fetch https://enterprise.proxmox.com/xxx/xxx ..."
 - Enterprise repos are still enabled on the Node. Disabling them will remove this error. An easy and safe way to do this is to run a post install script from Proxmox Helper Scripts (support to the project!). The script can be found at:
     - https://community-scripts.github.io/ProxmoxVE/scripts?id=post-pve-install
+ 
+#### When trying to Connnect to the Web UI- "The connection has timed out"
+- Check if Tailscales is running and has an active connection on the computer that is conneting to the Web UI
+- Check the IP address that you are trying to connect to, does it look like 100.xx.xx.xx:8006? Is it the correct IP?
+- Check your Tailscale's account, is the host showing connected to Tailscale?

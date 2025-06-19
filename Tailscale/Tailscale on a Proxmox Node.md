@@ -3,6 +3,8 @@ Installing Tailscale onto a Proxmox host very straightforward. This will give yo
 
 [In the Node](#In-the-Node)
 
+[Access the Node Remotely](#Access-the-Node-Remotely)
+
 [Check-Tailscale-Status](#Check-Tailscale-Status)
 
 [Links](#Links)
@@ -31,10 +33,12 @@ tailscale up
 
 Copy the provide link into a browser and add the Node to your Tailscale account.
 
-To access the Web UI of the Node, use the following address in your browser:
+# Access the Node Remotely
+
+Connected to Tailscale on your device. To access the Web UI of the Node, use the following address in your browser:
 
 ```
-https://\<tailscale ip\>:8006/
+https://<tailscale ip>:8006/
 ```
 
 # Check Tailscale Status

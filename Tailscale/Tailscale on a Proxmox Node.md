@@ -35,7 +35,9 @@ Copy the provide link into a browser and add the Node to your Tailscale account.
 
 # Access the Node Remotely
 
-Connected to Tailscale on your device. To access the Web UI of the Node, use the following address in your browser:
+Connect to Tailscale on the computer that you want to use to access the Node. 
+
+To access the Web UI of the Node, use the following address in your browser:
 
 ```
 https://<tailscale ip>:8006/

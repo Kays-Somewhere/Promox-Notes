@@ -27,3 +27,19 @@
 # Containers
 ### Bash: curl: command not found
 - Update the container using: sudo apt-get update
+
+### Container not connecting to internet
+##### If Tailscales is running:
+- ping a DNS Server to check if it is a internet or DNS issue:
+
+```
+ping 8.8.8.8
+```
+
+- Worked = DNS Issue (The lxc is using the host's DNS setting that are set to Tailscale. Manually setting the DNS overrides those setting allowing the lxc to resolve its DNS and connect to the internet.)
+    - Go to the container and clink on DNS on left side
+    - Double click on "DNS Servers"
+    - Under DNS Server type 1.1.1.1 (or a DNS server option such as 8.8.8.8)
+    - ![Screenshot 2025-06-19 193911](https://github.com/user-attachments/assets/d24f78d6-2bfd-43d0-8991-82106f7e5654)
+
+- Did not work = No Internet

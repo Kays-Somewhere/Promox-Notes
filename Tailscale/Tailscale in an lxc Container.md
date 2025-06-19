@@ -21,7 +21,7 @@ Installing Tailscale onto a Proxmox host or in lxc is straightforward. Installin
 - Proxmox Host with CT
 
 # Create the Container
-Create a container using the “Create CT” in the top left hand conner. For the [container template](#https://pve.proxmox.com/wiki/Linux_Container) chose debian-12. Name the container “tailscale” or something similar.
+Create a container using the “Create CT” in the top left hand conner. For the [container template](https://pve.proxmox.com/wiki/Linux_Container) chose debian-12. Name the container “tailscale” or something similar.
 
 The container needs to be granted access to the correct network resources in order for Tailscale to work. This requires editing the LXC config files on the node.
 

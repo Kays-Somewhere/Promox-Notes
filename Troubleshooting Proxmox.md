@@ -29,7 +29,7 @@
 - Update the container using: sudo apt-get update
 
 ### Container not connecting to internet
-##### If Tailscales is running:
+#### If Tailscales is running:
 - ping a DNS Server to check if it is a internet or DNS issue:
 
 ```

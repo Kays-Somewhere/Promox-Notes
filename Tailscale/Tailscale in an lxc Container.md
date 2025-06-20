@@ -1,5 +1,5 @@
 # Setting up Tailscale in an lxc Container 
-Installing Tailscale onto a Proxmox host or in lxc is straightforward. Installing in an lxc will give you access to the container though ssh. From there, you can ssh into the node. To gain access to the node via Web UI without additional setup, install Tailscale on the node itself.
+Installing Tailscale onto a Proxmox host or in lxc is straightforward. Installing in an lxc will give you access to the container though ssh. From there, you can ssh into the node. To gain access to the node via Web UI set up ssh local port fowarding, a reverse ssh tunnel, or something similar.
 
 [Create the Container](#Create-the-Container)
 
@@ -7,7 +7,7 @@ Installing Tailscale onto a Proxmox host or in lxc is straightforward. Installin
 
 [In the Container](#In-the-Container)
 
-[Access the Container Remotely](#Access-the-Container-Remotely)
+[Access the Container Through Tailscale](#Access-the-Container-Remotely)
 
 [Check Tailscale Status](#Check-Tailscale-Status)
 
@@ -81,6 +81,24 @@ To access the node from here, run:
 
 ```
 ssh root@\<local proxmox ip\>
+```
+
+**Local Port Fowarding**
+To access the Web UI of the Tailscale device you have to setup ssh local port fowarding.
+
+From your remote computer (the one that you are on) start a ssh connection to the device running Tailscale and enter your password:
+
+```
+ssh -L 8006:localhost:8006 <username>@<tailscaleip>
+```
+  - '-L' Specifies the username and IP to log into
+  - '8006:localhost:8006' tells the local host to foward all traffic on port 8006 to itself
+  - <username>@<tailscaleip> is the username and ip of the tailscale device
+
+To connect to the Web UI, in your browser go to:
+
+```
+http://localhost:8006
 ```
 
 # Check Tailscale Status

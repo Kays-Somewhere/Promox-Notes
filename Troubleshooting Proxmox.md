@@ -26,7 +26,10 @@
 
 # Containers
 ### Bash: curl: command not found
-- Update the container using: sudo apt-get update
+- Update the container using:
+  ```
+  sudo apt-get update
+  ```
 
 ### Container not connecting to internet
 #### If Tailscales is running:

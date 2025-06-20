@@ -18,5 +18,5 @@ ssh -L 3120:<WebUI_IP>:443 <username>@<IP_connectingto>
 To connect to the Web UI, in your browser go to:
 
 ```
-http://localhost:443
+http://localhost:3120
 ```

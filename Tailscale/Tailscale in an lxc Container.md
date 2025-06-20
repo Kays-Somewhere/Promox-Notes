@@ -9,6 +9,8 @@ Installing Tailscale onto a Proxmox host or in lxc is straightforward. Installin
 
 [Access the Container Through Tailscale](#Access-the-Container-Remotely)
 
+[Local Port Fowarding for Web UI Access](#Local-Port-Fowarding)
+
 [Check Tailscale Status](#Check-Tailscale-Status)
 
 [Links](#Links)
@@ -83,7 +85,7 @@ To access the node from here, run:
 ssh root@\<local proxmox ip\>
 ```
 
-**Local Port Fowarding**
+# Local Port Fowarding
 To access the Web UI of the Tailscale device you have to setup ssh local port fowarding.
 
 From your remote computer (the one that you are on) start a ssh connection to the device running Tailscale and enter your password:

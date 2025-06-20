@@ -95,7 +95,7 @@ ssh -L 8006:localhost:8006 <username>@<tailscaleip>
 ```
   - '-L' Specifies the username and IP to log into
   - '8006:localhost:8006' tells the local host to foward all traffic on port 8006 to itself
-  - <username>@<tailscaleip> is the username and ip of the tailscale device
+  - \<username\>@\<tailscaleip\> is the username and ip of the tailscale device
 
 To connect to the Web UI, in your browser go to:
 

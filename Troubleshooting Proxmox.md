@@ -30,6 +30,11 @@
   ```
   sudo apt-get update
   ```
+  or
+
+  ```
+  apt upgrade -y
+  ```
 
 ### Container not connecting to internet
 #### If Tailscales is running:

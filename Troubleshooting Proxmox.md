@@ -28,12 +28,7 @@
 ### Bash: curl: command not found
 - Update the container using:
   ```
-  sudo apt-get update
-  ```
-  or
-
-  ```
-  apt upgrade -y
+  apt-get upgrade
   ```
 
 ### Container not connecting to internet

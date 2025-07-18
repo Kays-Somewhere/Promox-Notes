@@ -1,5 +1,7 @@
 # Suricata Troubleshooting and Install
-https://suricata.io/
+Content Last Updated and Verified: 7/18/25
+
+Website: https://suricata.io/
 
 # Table of Contents
 [Install Most Current Version](#Install_Current_Version)

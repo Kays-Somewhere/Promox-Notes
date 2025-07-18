@@ -1,12 +1,40 @@
 # Suricata Troubleshooting and Install
 https://suricata.io/
 
-# Install
+# Table of Contents
+[Install Most Current Version](#Install_Current_Version)
+
+[Install Previous Version](#Install_Previous_Version)
+
+[Troubleshooting](#Troubleshooting)
+
+# Install Current Version
 Use the following guide to download Suricata in a lxc container.
+
+Container Template: Ubuntu 22.04
 
 Guide: https://docs.suricata.io/en/latest/quickstart.html
 
+# Install Previous Version 
+Use the following guide to download Suricata in a lxc container with a small mod to the version command.
+
 Container Template: Ubuntu 22.04
+
+Guide: https://docs.suricata.io/en/latest/quickstart.html
+
+The command given in step "2.1. Installation" will install the current stable version. To install a specific version, the second line of the command has to be modified. For example, to install Suricata ver. 7.0.11 you would use the command below. 
+
+```
+sudo apt-get install software-properties-common
+sudo add-apt-repository ppa:oisf/suricata-7.0
+sudo apt update
+sudo apt install suricata jq
+```
+
+What changed?
+
+The end of the second line changed from "suricata-stable" to "suricata-7.0". To install Suricata ver. 6 and so on, all you need to do is changed the number to the desired version.
+
 
 # Troubleshooting
 

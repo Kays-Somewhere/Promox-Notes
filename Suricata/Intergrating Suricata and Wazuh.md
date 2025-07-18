@@ -19,6 +19,8 @@ This was first tried with Suricata 8.0.0 released on 7/16/24, but at the time of
 
 [Test Intergration](#Test_Intergration)
 
+[References](#References)
+
 # Versions Used
 Container Template: Ubuntu 22.04
 
@@ -174,7 +176,7 @@ The Wazuh Dashboard should show:
 <ins>Issue:</ins> 
 - Suricata eve.json logs only showed "SURICATA Ethertype unknown"
 
-<img width="1118" height="584" alt="Screenshot 2025-07-16 175430" src="https://github.com/user-attachments/assets/83c2241d-0504-4ded-87cd-c126a9e1a668" />
+<img width="1293" height="625" alt="Screenshot 2025-07-16 173758" src="https://github.com/user-attachments/assets/07515175-7999-4e0f-b98c-76b36f56b313" />
 
 <ins>Fix:</ins>
 - If Suricata is running version 8.0.0, downgrade to version 7.0.11

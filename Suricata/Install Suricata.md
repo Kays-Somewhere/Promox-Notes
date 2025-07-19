@@ -41,6 +41,8 @@ The end of the second line changed from "suricata-stable" to "suricata-7.0". To 
 # Troubleshooting
 
 ### Step 2.5 Alerting
+When running the trigger below there can be 2 issues, No responce/output and log Output showing "SURICATA AF-PACKET truncated packet".
+
 
 Trigger:
 
@@ -49,20 +51,23 @@ sudo tail -f /var/log/suricata/fast.log
 curl http://testmynids.org/uid/index.html
 ```
 
-#### No Responce/Output
+---
+
+#### 1- No Responce/Output
 - Wait a minute then ctrl+C to cancel
-- If error 'Curl: command not found'
-  - Run
+- If error 'Curl: command not found' run:
     ```
     apt install curl
     ```
 
-#### Actual Results not matching Expected
+---
+
+#### 2- log Output showing "SURICATA AF-PACKET truncated packet"
 Expected result: alert ip any any -> any any (msg:"GPL ATTACK_RESPONSE id check returned root"; content:"uid=0|28|root|29|"; classtype:bad-unknown; sid:2100498; rev:7; metadata:created_at 2010_09_23, updated_at 2010_09_23;)
 
-Actual result: 06/20/2025-15:30:29.415984  [**] [1:2200122:1] SURICATA AF-PACKET truncated packet [**] [Classification: Generic Protocol Command Decode] [Priority: 3] [**] [Raw pkt: AA 00 00 CC F0 ... ]
+Actual result: 06/20/2025-15:30:29.415984  [\*\*] [1:2200122:1] SURICATA AF-PACKET truncated packet [\*\*] [Classification: Generic Protocol Command Decode] [Priority: 3] [\*\*] [Raw pkt: AA 00 00 CC F0 ... ]
 
-<ins>**What is happening? **</ins>
+<ins>**What is happening?**</ins>
   - A truncated packet means that only a portion of a packet is captured, not the whole thing.
 
 <ins>**Fix**</ins>

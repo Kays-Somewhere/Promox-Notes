@@ -12,7 +12,7 @@ Follow the quickstart guide on Wazuh: [https://documentation.wazuh.com/current/q
 Follow the Quickstart guide on Wazuh: [https://documentation.wazuh.com/current/installation-guide/wazuh-agent/index.html](https://documentation.wazuh.com/current/installation-guide/wazuh-agent/index.html)
 
 # Troubleshooting
-### Dependency Problems Error while Installing Endpoint Agent
+### Ubuntu 22.04 Container: Dependency Problems Error while Installing Endpoint Agent
 **Error:**  
 Reading database ... 19955 files and directories currently installed.)  
 Preparing to unpack .../wazuh-agent_4.12.0-1_amd64.deb ...  

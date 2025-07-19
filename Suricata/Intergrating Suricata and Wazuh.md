@@ -8,7 +8,7 @@ Suricata Website: https://suricata.io/
 Wazuh Website: https://wazuh.com/
 
 #### Important Note
-This was first tried with Suricata 8.0.0 released on 7/16/24, but at the time of writing (7/18/25), that version was not working correctly in my lab and could not be intergrated. Suricata version 7.0.11 and Wazuh version 4.13 were used. 
+This was first tried with Suricata 8.0.0 released on 7/8/25, but at the time of writing (7/18/25), that version was not working correctly in my lab and could not be intergrated. Suricata version 7.0.11 and Wazuh version 4.13 were used. 
 
 # Table of Contents
 [Versions Used](#Versions_Used)

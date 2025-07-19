@@ -1,8 +1,4 @@
-# Useful Notes That Have No Other Place
-
-[Local Port Fowarding for Remote Web UI Access](#Local-Port-Fowarding-for-Remote-Web-UI-Access)
-
-## Local Port Fowarding for Remote Web UI Access
+# Local Port Fowarding for Remote Web UI Access
 To access the Web UI of a service running on a remote device you have to setup ssh local port fowarding.
 
 From your remote computer (the one that you are on) start a ssh connection to the device running the service and enter the password:

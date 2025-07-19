@@ -113,13 +113,13 @@ tailscale status
 This will bring up a list of Tailscale IPs and their connection status.
 
 # Links 
-Linux Container: [https://pve.proxmox.com/wiki/Linux_Container](url)
+Linux Container: https://pve.proxmox.com/wiki/Linux_Container
 
-Install Tailscale in a Debain container: [https://tailscale.com/kb/1174/install-debian-bookworm](url)
+Install Tailscale in a Debain container: https://tailscale.com/kb/1174/install-debian-bookworm
 
-Fix Tailscale ‘failed to connect to local tailscaled’ Error on Proxmox Containers: [https://selfhostingsanctuary.com/servers-hardware/virtualization-containers/tailscale-failed-to-connect-to-local-tailscaled-error-on-proxmox-containers/](url)
+Fix Tailscale ‘failed to connect to local tailscaled’ Error on Proxmox Containers: https://selfhostingsanctuary.com/servers-hardware/virtualization-containers/tailscale-failed-to-connect-to-local-tailscaled-error-on-proxmox-containers/
 
-Tailscale in lxc containers: [https://tailscale.com/kb/1130/lxc-unprivileged](url)
+Tailscale in lxc containers: https://tailscale.com/kb/1130/lxc-unprivileged
 
 # Troubleshooting
 ### Bash: curl: command not found

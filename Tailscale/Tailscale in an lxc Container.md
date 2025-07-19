@@ -13,9 +13,9 @@ Installing Tailscale onto a Proxmox host or in lxc is straightforward. Installin
 
 [Check Tailscale Status](#Check-Tailscale-Status)
 
-[Links](#Links)
-
 [Troubleshooting](#Troubleshooting)
+
+[Links](#Links)
 
 
 ## Requirements:
@@ -113,20 +113,24 @@ tailscale status
 This will bring up a list of Tailscale IPs and their connection status.
 
 # Links 
-Linux Container: https://pve.proxmox.com/wiki/Linux_Container
+Linux Container: [https://pve.proxmox.com/wiki/Linux_Container](url)
 
-Install Tailscale in a Debain container: https://tailscale.com/kb/1174/install-debian-bookworm
+Install Tailscale in a Debain container: [https://tailscale.com/kb/1174/install-debian-bookworm](url)
 
-Fix Tailscale ‘failed to connect to local tailscaled’ Error on Proxmox Containers: https://selfhostingsanctuary.com/servers-hardware/virtualization-containers/tailscale-failed-to-connect-to-local-tailscaled-error-on-proxmox-containers/
+Fix Tailscale ‘failed to connect to local tailscaled’ Error on Proxmox Containers: [https://selfhostingsanctuary.com/servers-hardware/virtualization-containers/tailscale-failed-to-connect-to-local-tailscaled-error-on-proxmox-containers/](url)
 
-Tailscale in lxc containers: https://tailscale.com/kb/1130/lxc-unprivileged
+Tailscale in lxc containers: [https://tailscale.com/kb/1130/lxc-unprivileged](url)
 
 # Troubleshooting
-Bash: curl: command not found
+### Bash: curl: command not found
 - Update the container using: sudo apt-get update
 
-failed to connect to local tailscaled; it doesn't appear to be running (sudo systemctl start tailscaled ?)
+---
+
+### "failed to connect to local tailscaled; it doesn't appear to be running (sudo systemctl start tailscaled ?)"
 - Run the command: sudo systemctl start tailscaled
 
-failed to connect to local tailscaled (which appears to be running as tailscaled, pid 1430). Got error: Failed to connect to local Tailscale daemon for /localapi/v0/status; systemd tailscaled.service not running. Error: dial unix /var/run/tailscale/tailscaled.sock: connect: no such file or directory
+---
+
+### "failed to connect to local tailscaled (which appears to be running as tailscaled, pid 1430). Got error: Failed to connect to local Tailscale daemon for /localapi/v0/status; systemd tailscaled.service not running. Error: dial unix /var/run/tailscale/tailscaled.sock: connect: no such file or directory"
 - Go to the above Node section and run/check that the files are correct.

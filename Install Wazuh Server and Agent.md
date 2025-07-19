@@ -12,8 +12,8 @@ Follow the quickstart guide on Wazuh: [https://documentation.wazuh.com/current/q
 Follow the Quickstart guide on Wazuh: [https://documentation.wazuh.com/current/installation-guide/wazuh-agent/index.html](#https://documentation.wazuh.com/current/installation-guide/wazuh-agent/index.html)
 
 # Troubleshooting
-### dependency problems error while installing endpoint agent
-**Error: **  
+### Dependency Problems Error while Installing Endpoint Agent
+**Error:**  
 Reading database ... 19955 files and directories currently installed.)  
 Preparing to unpack .../wazuh-agent_4.12.0-1_amd64.deb ...  
 Unpacking wazuh-agent (4.12.0-1) over (4.12.0-1) ...  
@@ -21,12 +21,12 @@ dpkg: dependency problems prevent configuration of wazuh-agent:
  wazuh-agent depends on lsb-release; however:  
   Package lsb-release is not installed.  
 
-dpkg: error processing package wazuh-agent (--install):
- dependency problems - leaving unconfigured
-Errors were encountered while processing:
- wazuh-agent
+dpkg: error processing package wazuh-agent (--install):  
+ dependency problems - leaving unconfigured  
+Errors were encountered while processing:  
+ wazuh-agent  
 
-**fix:  **
+**Fix:**  
 - Install a missing package  
 ```
 apt-get update

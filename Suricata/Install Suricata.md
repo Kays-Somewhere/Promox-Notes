@@ -1,4 +1,4 @@
-# Suricata Troubleshooting and Install
+# Suricata Install and Troubleshooting
 Content Last Updated and Verified: 7/18/25
 
 Website: https://suricata.io/

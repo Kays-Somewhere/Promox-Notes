@@ -26,9 +26,18 @@
 
 # Containers
 ### Bash: curl: command not found
+There are 2 ways to resolve this, update the container or install curl.
+
 - Update the container using:
   ```
-  apt-get upgrade
+  apt-get update && apt-get upgrade -y
+  ```
+  
+  Note: the "-y" command will answer with a y or yes to all prompts from upgrade
+  
+- Install Curl
+  ```
+  apt install curl
   ```
 
 ### Container not connecting to internet
